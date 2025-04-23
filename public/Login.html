@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <!-- Assuming your CSS file is named style.css -->
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <img src="brainwave.png" alt="Logo" class="logo" />
+        <!-- Use your own logo path -->
+        <form class="login-form" onsubmit="return validateForm(event)">
+          <input
+            type="text"
+            placeholder="Username"
+            class="input-field"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input-field"
+            required
+          />
+          <button type="submit" class="login-button">Log In</button>
+        </form>
+        <div class="links">
+          <a
+            href="https://vgouti-brainwave-map-b1hydf.streamlit.app/"
+            class="forgot-password"
+            >Forgot password?</a
+          >
+          <p>
+            <font color="white ">
+              Don't have an account? <a href="#" class="sign-up">Sign up</a>
+            </font>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Include your JS file for form validation -->
+  </body>
+</html>
